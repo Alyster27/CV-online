@@ -1,0 +1,10 @@
+<ion-header>  
+  <ion-toolbar>  
+    <ion-title>{{ imgTitle }}</ion-title>  
+    <ion-button color="primary" (click)='dismiss()'  style='float: right;'>Close</ion-button>
+  </ion-toolbar>  
+</ion-header>  
+  
+<ion-content>
+  <img [src]="imgUrl">
+</ion-content>

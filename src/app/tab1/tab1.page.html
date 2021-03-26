@@ -1,17 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      {{ title }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card class="card" *ngFor="let data of personalInformation" style="max-width: 1240px; margin-left: auto; margin-right: auto;">
+    <ion-card-header>
+      <img [src]="data.imgUrl" alt="" class="profil-image">
+      <ion-card-title>{{ data.name }} {{ data.firstname }}</ion-card-title>
+      <ion-card-subtitle>{{ data.nationality }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ data.birthday }}</ion-card-subtitle>
+      <ion-card-subtitle color="primary"><a href="mailto:info@alierrih.ch">{{ data.email }}</a></ion-card-subtitle>
+      <ion-card-subtitle color="primary"><a href="tel:+41793407994">{{ data.call }}</a></ion-card-subtitle>
+      <ion-card-subtitle>{{ data.address }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ data.langageIT }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ data.framework }}</ion-card-subtitle>
+      <ion-card-subtitle>{{ data.langue }}</ion-card-subtitle>
+    </ion-card-header>
+    <br>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content>
+      <div>{{ data.presentation1 }}</div><br>
+      <div>{{ data.presentation2 }}</div><br>
+      <div>{{ data.presentation3 }}</div><br>
+      <div>{{ data.presentation4 }}</div><br>
+      <div>{{ data.presentation5 }}</div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

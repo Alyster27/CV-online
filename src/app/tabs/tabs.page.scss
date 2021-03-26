@@ -1,1 +1,17 @@
+@media only screen and (max-width: 414px) {
+    ion-tabs {
+      width: 414px;
+    }
+  }
 
+@media only screen and (max-width: 375px) {
+  ion-tabs {
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  ion-tabs {
+    width: 360px;
+  }
+}

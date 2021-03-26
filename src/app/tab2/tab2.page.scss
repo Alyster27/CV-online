@@ -1,0 +1,24 @@
+.img-png{
+    max-width: 10%;
+    position: absolute;
+    right: 15px;
+}
+ion-card-subtitle{
+    width: 75%;
+}
+
+//modal
+/* DOES NOT WORK - not specific enough */
+.modal-wrapper {
+    background: #222;
+  }
+  
+  /* Works - pass "my-custom-class" in cssClass to increase specificity */
+  .my-custom-class .modal-wrapper {
+    background: #222;
+  }
+
+  ion-card{
+    background-color: #F5F5F5;
+}
+
